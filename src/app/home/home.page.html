@@ -1,20 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color="dark">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <br> <br>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="contenido">
+
+    <h1>PRUEBA UNO</h1>
+
+    <h4>Aquí comienza todo</h4>
+
+    <h2>Bienvenido</h2>
+
+
+    <ion-item color="dark">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input maxlength="8" minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" minlength="4"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-button expand="block" color="medium" [routerLink]="['/catalogo']">Ingresar</ion-button>
+
+    <br>
+
+    <ion-button fill="clear" [routerLink]="['/registro']">Crea una cuenta gratis</ion-button>
+    <br>
+
+    <ion-button color="danger "fill="clear" [routerLink]="['/olvido-pass']" >¿Olvido la contraseña?</ion-button>
+
+
+
   </div>
+
 </ion-content>

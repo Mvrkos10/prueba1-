@@ -1,0 +1,66 @@
+
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>PRUEBA UNO</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button color="primary" text="atras"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content color="dark">
+
+<br> <br>
+
+  <div id="contenido">
+    <form action="">
+
+    <h1>Nueva cuenta</h1>
+
+    <h5>Completa los campos</h5>
+
+    <ion-item color="dark">
+      <ion-label position="stacked">Usuario</ion-label>
+      <ion-input maxlength="8" minlength="3" placeholder="Ingresa tu nick"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input type="email" placeholder="Ingresa tu email"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item color="dark">
+        <ion-label>Selecciona tu carrera</ion-label>
+        <ion-select interface="action-sheet">
+          <ion-select-option value="cocina">Cocina</ion-select-option>
+          <ion-select-option value="informatica">Informatica</ion-select-option>
+          <ion-select-option value="redes">Redes</ion-select-option>
+          <ion-select-option value="administracion">Administración</ion-select-option>
+          <ion-select-option value="otra">Otra</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-item color="dark">
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input type="password" minlength="4" placeholder="Ingresa tu contraseña"></ion-input>
+    </ion-item>
+
+    <br>
+
+
+
+  <ion-toolbar color="dark">
+    <ion-button color="success" (click)="AlertaRegistro()" [routerLink]="['/home']">Registrar</ion-button>
+
+    <ion-button type="reset "color="primary "fill="clear">Limpiar</ion-button>
+  </ion-toolbar>
+
+  </form>
+
+  </div>
+
+
+</ion-content>
